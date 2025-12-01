@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #221f36;
+    color: #ffffff;
+    padding-bottom: 40px;
+}
+
+
+nav {
+    background-color: #1a1728;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #b7a9ff;
+    font-size: 32px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #b7a9ff;
+    transform: scale(1.1);
+}
+
+
+section h1 {
+    text-align: center;
+    font-size: 42px;
+    margin: 60px 0 20px;
+    color: #b7a9ff;
+}
+
+
+section p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 40px;
+    color: #d7d7d7;
+    line-height: 1.5;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1a1728;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    color: #b7a9ff;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #d7d7d7;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #7b5bf0;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b7a9ff;
+    transform: scale(1.1);
+}
+
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1a1728;
+    color: #ffffff;
+}
+
+form input::placeholder {
+    color: #b7a9ff;
+}
+
+form input[type="submit"] {
+    background-color: #7b5bf0;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #b7a9ff;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section p {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* Fondo general de la sección */
+.testimonios {
+    background-color: #1a1728;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Título */
+.titulo-testimonios {
+    font-size: 40px;
+    color: #b7a9ff;
+    margin-bottom: 50px;
+}
+
+/* TESTIMONIOS*/
+.testimonios-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.testimonio-card {
+    background-color: #221f36;
+    width: 300px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-8px);
+}
+
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #b7a9ff;
+}
+
+
+.nombre {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+.rol {
+    display: block;
+    color: #d7d7d7;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+
+.estrellas {
+    color: #f2c400;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+.texto {
+    color: #d7d7d7;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+/* Boton para volver a arriba */
+.btn-volver {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #7b5bf0;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+.btn-volver:hover {
+    background-color: #b7a9ff;
+    transform: translateY(-4px);
+}
+
+
