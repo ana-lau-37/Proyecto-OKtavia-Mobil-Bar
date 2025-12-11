@@ -264,6 +264,13 @@ footer{
     line-height: 1.4;
 }
 
+footer{
+    background-color: #1a1826;
+    padding: 20px;
+    margin: 0;
+    color: #d4d4d4;
+    text-align: center;
+}
 
 /* Boton para volver a arriba */
 .btn-volver {
@@ -290,12 +297,6 @@ footer{
     transform: translateY(-4px);
 }
 
-footer{
-    background-color: #1a1826;
-    padding: 20px;
-    margin: 0;
-    color: #d4d4d4;
-    text-align: center;
-}
+
 
 
